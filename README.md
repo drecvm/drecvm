@@ -5,7 +5,7 @@ Execucao rapida (diretamente do Docker Hub)
 
 2 - Rodar o docker com os dados da imagem ja publicada no docker hub
 
-docker run -i -t -p 8888:8888 sauloandrade/fds:0.1 
+docker run -i -t -p 8888:8888 drecvm/drecvm:0.1 
 
 3 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
@@ -19,11 +19,11 @@ Executando localmente from scratch
 
 2 - Abrir o terminal e rodar o comando que cria uma nova imagem a partir do docker file desse diretorio config
     
-docker build -t trabalhofds/fds:0.1 .
+docker build -t trabalhodrecvm/drecvm:0.1 .
     
 3 - Executar a imagem e com isso criar o container e rodando o jupter no diretorio que ele ja baixou o notebook do trabalho
 
-docker run -i -t -p 8888:8888 trabalhofds/fds:0.1 
+docker run -i -t -p 8888:8888 trabalhodrecvm/drecvm:0.1 
 
 4 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
@@ -65,18 +65,12 @@ docker stop <ID-CONTAINER>
 
 Docker hub
 -----------
-I - Retaggeando uma imagem local para preparar o push para o docker hub
-
-docker tag <USER-LOCAL>/<NOME-LOCA>:<TAG-LOCAL>1.0 <DOCKE-USER>/<REPOSITORIO>:<TAG>
-
-EX: docker tag trabalhofds/fds:0.1 sauloandrade/fds:0.1
-
-II - Verificando se esta logado no docker hub
+I - Verificando se esta logado no docker hub
 
 docker login
 
-III - Fazendo push da imagem para o Docker hub (pode ser necessario ter que retaggear anterioremente) 
+II - Fazendo push da imagem para o Docker hub (pode ser necessario ter que retaggear anterioremente) 
 
 docker push <DOCKE-USER>/<REPOSITORIO>:<TAG>
 
-EX: docker push sauloandrade/fds:0.1
+EX: docker push drecvm/drecvm:0.1
