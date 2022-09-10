@@ -19,7 +19,7 @@ Executando localmente from scratch
 
 2 - Abrir o terminal e rodar o comando que cria uma nova imagem a partir do docker file desse diretorio config
     
-docker build -t trabalhodrecvm/drecvm:0.1 .
+docker build -t drecvm/drecvm:0.1 .
     
 3 - Executar a imagem e com isso criar o container e rodando o jupter no diretorio que ele ja baixou o notebook do trabalho
 
@@ -62,6 +62,10 @@ docker start -i <ID-CONTAINER>
 IV - Parar um container ativo
 
 docker stop <ID-CONTAINER>
+
+V - Conectar em um container atraves do comendo exec
+
+docker exec -it <ID-CONTAINER> /bin/bash
 
 Docker hub
 -----------
