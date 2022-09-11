@@ -6,4 +6,3 @@ dependencies:
   - anaconda=2022.05
   - prov=2.0.0
   - pydot=1.4.2
-  - python-graphviz=0.20.1
