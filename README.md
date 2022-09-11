@@ -23,7 +23,7 @@ docker build -t drecvm/drecvm:0.1 .
     
 3 - Executar a imagem e com isso criar o container e rodando o jupter no diretorio que ele ja baixou o notebook do trabalho
 
-docker run -i -t -p 8888:8888 trabalhodrecvm/drecvm:0.1 
+docker run -i -t -p 8888:8888 drecvm/drecvm:0.1 
 
 4 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 

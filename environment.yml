@@ -1,0 +1,7 @@
+name: drecvmenv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.12
+  - anaconda=2022.05
+  - flask
