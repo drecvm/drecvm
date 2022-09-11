@@ -4,4 +4,4 @@ channels:
 dependencies:
   - python=3.9.12
   - anaconda=2022.05
-  - flask
+  - prov=2.0.0
